@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aplicativo Web de Pacientes</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Registro de Pacientes</h1>
+
+  <h2>Formulario de pacientes</h2>
+  <form id="pacienteForm">
+    <label for="nombrepaciente">Nombre:</label>
+    <input type="text" id="nombrepaciente" required>
+
+    <label for="apellidopaciente">Apellido:</label>
+    <input type="text" id="apellidopaciente" required>
+
+    <label for="cedulapaciente">Número de Cédula:</label>
+    <input type="number" id="cedulapaciente" required>
+
+    <label for="edadpaciente">Edad:</label>
+    <input type="number" id="edadpaciente" required>
+
+    <label for="telefonopaciente">Telefono:</label>
+    <input type="number" id="telefonopaciente" required>
+
+    <label for="especialidadpaciente">Especialidad:</label>
+    <select id="especialidadpaciente" required>
+      <option value="">Seleccione una especialidad</option>
+      <option value="medicina_general">Medicina general</option>
+      <option value="cardiologia">Cardiología</option>
+      <option value="medicina_interna">Medicina interna</option>
+      <option value="dermatologia">Dermatología</option>
+      <option value="rehabilitacion_fisica">Rehabilitación física</option>
+      <option value="psicologia">Psicología</option>
+      <option value="odontologia">Odontología</option>
+      <option value="radiologia">Radiología</option>
+    </select>
+
+    <button type="submit">Guardar Pacientes</button>
+  </form>
+
+  <!-- Tabla para mostrar los pacientes -->
+  <h2>Listado de Pacientes</h2>
+  <table id="pacienteTable">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Número de Cédula</th>
+        <th>Edad</th>
+        <th>Teléfono</th>
+        <th>Especialidad requerida</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <button id="downloadButtonp">Descargar JSON PACIENTES</button>
+
+  <script src="scriptp.js"></script>
+</body>
+</html>
